@@ -1,11 +1,7 @@
-import Header from "@/components/Header";
-import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
+import { useEffect } from "react";
 
 export default function Home() {
-  const token = cookies().get("token");
-  if (!token) {
-    redirect("/login");
-  }
+  redirect("/login");
   return <div></div>;
 }

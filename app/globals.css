@@ -15,6 +15,9 @@
 }
 
 body {
+  display: flex;
+  justify-content: center;
+  min-width: 350px;
 }
 
 @layer utilities {
